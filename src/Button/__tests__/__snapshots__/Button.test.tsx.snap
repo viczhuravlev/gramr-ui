@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My Button renders button 1`] = `
+<button>
+  Text for button
+</button>
+`;
+
+exports[`My Button renders snapshots, too 1`] = `
+<div>
+  <h1>
+    Hello, Enzyme!
+  </h1>
+</div>
+`;
