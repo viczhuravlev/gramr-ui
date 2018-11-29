@@ -7,7 +7,6 @@ describe('My Button', () => {
   it('renders button', () => {
     const wrapper = shallow(<Button text={'Text for button'} />);
 
-    console.log(wrapper);
     expect(wrapper).toMatchSnapshot();
 
     // expect(wrapper.find('h1').html()).toMatch(/Hello, Enzyme/)

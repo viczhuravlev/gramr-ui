@@ -1,11 +1,11 @@
 {
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
   "rules": {
     "quotemark": [true, "single", "jsx-double"],
     "member-access": false,
     "prettier": true
   },
   "linterOptions": {
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules", "**/__tests__/**"]
   }
 }

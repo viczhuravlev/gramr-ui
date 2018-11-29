@@ -4,8 +4,6 @@ interface IButton {
   text: string;
 }
 
-const Button: StatelessComponent<IButton> = ({ text }) => (
-  <button>{text}</button>
-);
+const Button: StatelessComponent<IButton> = ({ text }) => <button>{text}</button>;
 
 export default Button;
