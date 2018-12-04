@@ -36,6 +36,8 @@
   "author": "Victor Zhuravlev",
   "license": "MIT",
   "dependencies": {
+    "@emotion/core": "10.0.2",
+    "@emotion/styled": "10.0.2",
     "@types/react": "16.4.18",
     "@types/react-dom": "16.0.9",
     "react": "16.6.0",
@@ -50,6 +52,7 @@
     "@types/enzyme-adapter-react-16": "1.0.3",
     "@types/jest": "23.3.9",
     "awesome-typescript-loader": "5.2.1",
+    "babel-plugin-emotion": "10.0.2",
     "enzyme": "3.7.0",
     "enzyme-adapter-react-16": "1.7.0",
     "enzyme-to-json": "3.3.4",
@@ -67,10 +70,15 @@
     "webpack-node-externals": "1.7.2"
   },
   "lint-staged": {
-    "*.{js,md,ts,tsx}": [
-      "npm run prettier",
-      "npm run lint",
-      "git add"
+    "linters": {
+      "*.{js,md,ts,tsx}": [
+        "npm run prettier",
+        "npm run lint",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "**/lib/**"
     ]
   },
   "husky": {

@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`My Button renders button 1`] = `
-<button>
+<Styled(button)>
   Text for button
-</button>
+</Styled(button)>
 `;
 
 exports[`My Button renders snapshots, too 1`] = `
