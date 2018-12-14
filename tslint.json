@@ -3,7 +3,11 @@
   "rules": {
     "quotemark": [true, "single", "jsx-double"],
     "member-access": false,
-    "prettier": true
+    "prettier": true,
+    "object-literal-sort-keys": false
+  },
+  "jsRules": {
+    "object-literal-sort-keys": false //Disable for javascript
   },
   "linterOptions": {
     "exclude": ["node_modules", "**/__tests__/**"]
