@@ -8,7 +8,8 @@
     "es6": true
   },
   "rules": {
-    "no-unused-vars": "off",
+    "no-undef": "warn",
+    "no-unused-vars": "warn",
     "react/prop-types": "off",
     "import/no-unresolved": "off",
     "typescript/no-unused-vars": "warn",

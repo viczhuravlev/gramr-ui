@@ -27,5 +27,5 @@ node_modules/
 
 # other
 .DS_Store
-yarn.lock
 package-lock.json
+.docz

@@ -12,35 +12,38 @@ at vzhuravlev15@gmail.com
 #### Technology stack
 
 - [x] React
-- [ ] Emotion
-- [ ] TypeScript
+- [x] Emotion
+- [x] TypeScript
 
 #### Build
 
-- [ ] Webpack
-  - [ ] Babel
-  - [ ] Typescript by babel
-  - [ ] SVG
+- [x] Webpack
+  - [x] Babel
+  - [x] Typescript by babel
+  - [x] SVG
 
 #### Quality assurance
 
-- [ ] Jest
-- [ ] Enzyme
-- [ ] ESlint
-- [ ] stylelint
+- [x] Jest
+- [x] react-test-renderer
+- [x] ESlint
+- [x] stylelint
+- [x] tsx
+- [x] type-coverage
 
 #### DOCS
 
-- [ ] docz
-  - [ ] default theme
+- [x] docz
+  - [x] default theme
   - [ ] custom theme
+    - [ ] light
+    - [ ] dark
 
 #### Tools
 
-- [ ] husky
-- [ ] lint-staged
-- [ ] prettier
-- [ ] type-coverage
+- [x] husky
+- [x] lint-staged
+- [x] prettier
 
 ### Components
 
@@ -70,3 +73,5 @@ at vzhuravlev15@gmail.com
 - [ ] Pagination?
 - [ ] Step?
 - [ ] Card?
+- [x] TextClamper?
+- [x] HighLighter?
