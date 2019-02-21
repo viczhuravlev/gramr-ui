@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[component] HighLighter [Snapshot] HighLighter 1`] = `
+Array [
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, q",
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-rp5c58{background-color:yellow;opacity:0.1;}",
+      }
+    }
+    data-emotion-css="rp5c58"
+  />,
+  <span
+    className="css-rp5c58"
+    color="yellow"
+    opacity={0.1}
+  >
+    ui
+  </span>,
+  "s nostrud exercitation ullamco laboris nisi ut aliq",
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-rp5c58{background-color:yellow;opacity:0.1;}",
+      }
+    }
+    data-emotion-css="rp5c58"
+  />,
+  <span
+    className="css-rp5c58"
+    color="yellow"
+    opacity={0.1}
+  >
+    ui
+  </span>,
+  "p ex ea commodo consequat. D",
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-rp5c58{background-color:yellow;opacity:0.1;}",
+      }
+    }
+    data-emotion-css="rp5c58"
+  />,
+  <span
+    className="css-rp5c58"
+    color="yellow"
+    opacity={0.1}
+  >
+    ui
+  </span>,
+  "s aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa q",
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-rp5c58{background-color:yellow;opacity:0.1;}",
+      }
+    }
+    data-emotion-css="rp5c58"
+  />,
+  <span
+    className="css-rp5c58"
+    color="yellow"
+    opacity={0.1}
+  >
+    ui
+  </span>,
+  " officia deserunt mollit anim id est laborum.",
+]
+`;

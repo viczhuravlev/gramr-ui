@@ -1,0 +1,64 @@
+---
+name: HighLighter
+---
+
+import { Playground, PropsTable } from 'docz';
+import HighLighter from './HighLighter';
+
+# HighLighter
+
+<PropsTable of={HighLighter} />
+
+## Basic usage
+
+<Playground>
+  {() => {
+    const search = 'ui';
+    const text =
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+    return <HighLighter text={text} search={search} />;
+  }}
+</Playground>
+
+## Custom color
+
+<Playground>
+  {() => {
+    const search = 'qui';
+    const text =
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+    return <HighLighter text={text} search={search} color="skyBlue" opacity={1} />;
+  }}
+</Playground>
+
+## Not found
+
+<Playground>
+  {() => {
+    const search = 'asdasdasdas';
+    const text =
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+    return <HighLighter text={text} search={search} color="skyBlue" opacity={1} />;
+  }}
+</Playground>
+
+## Empty search
+
+<Playground>
+  {() => {
+    const search = null;
+    const text =
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+    return <HighLighter text={text} search={search} color="skyBlue" opacity={1} />;
+  }}
+</Playground>
+
+## Empty text
+
+<Playground>
+  {() => {
+    const search = 'ui';
+    const text = null;
+    return <HighLighter text={text} search={search} color="skyBlue" opacity={1} />;
+  }}
+</Playground>

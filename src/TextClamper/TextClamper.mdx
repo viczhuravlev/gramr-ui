@@ -1,0 +1,39 @@
+---
+name: TextClamper
+---
+
+import { Playground, PropsTable } from 'docz';
+
+import TextClamper from './TextClamper';
+
+# TextClamper
+
+<PropsTable of={TextClamper} />
+
+Warning! This is the support for WebKit's propriety and undocumented implementation of line clamp.
+
+More info: Line clamps are part of the CSS Overflow Module Level 3 which is currently in Editor's Draft and totally unsupported at the moment.
+
+## Basic usage
+
+<Playground>
+  <TextClamper>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </TextClamper>
+</Playground>
+
+## Clamp
+
+<Playground>
+  <TextClamper clamp="3">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </TextClamper>
+</Playground>
