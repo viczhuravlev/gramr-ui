@@ -1,0 +1,19 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "typescript"],
+  "extends": ["eslint:recommended", "airbnb", "prettier"],
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "react/prop-types": "off",
+    "import/no-unresolved": "off",
+    "typescript/no-unused-vars": "warn",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "warn",
+    "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }]
+  }
+}
