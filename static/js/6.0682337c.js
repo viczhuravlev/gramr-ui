@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{"./.docz/app/imports.js":function(n,e,r){"use strict";r.r(e),r.d(e,"imports",function(){return t});var t={"src/index.mdx":function(){return r.e(3).then(r.bind(null,"./src/index.mdx"))},"src/HighLighter/HighLighter.mdx":function(){return r.e(2).then(r.bind(null,"./src/HighLighter/HighLighter.mdx"))},"src/TextClamper/TextClamper.mdx":function(){return r.e(4).then(r.bind(null,"./src/TextClamper/TextClamper.mdx"))}}}},0,[2,3,4]]);
-//# sourceMappingURL=6.0e4ed491aeb7a62637e6.js.map
