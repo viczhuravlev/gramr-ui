@@ -1,0 +1,27 @@
+---
+name: Button
+---
+
+import { Playground, PropsTable } from 'docz';
+
+import Button from './Button';
+
+# Button
+
+<PropsTable of={Button} />
+
+## Default
+
+<Playground>
+  <Button>Click</Button>
+  <Button isDisabled>isDisabled</Button>
+</Playground>
+
+## Dark
+
+<Playground>
+  <Button theme="dark">Click</Button>
+  <Button theme="dark" isDisabled>
+    isDisabled
+  </Button>
+</Playground>
