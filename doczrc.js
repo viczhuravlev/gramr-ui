@@ -10,6 +10,7 @@ module.exports = {
       primary: '#03a9f4'
     }
   },
+  wrapper: 'config/docz/wrapper',
   modifyBundlerConfig: (config, dev, args) => {
     const svgIndex = config.module.rules.findIndex(elem => {
       return String(elem.test) === String(/\.(svg)(\?.*)?$/);
