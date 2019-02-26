@@ -1,15 +1,9 @@
-export type SizeType = 's' | 'm' | 'l';
+import { ThemeType } from '../styles/theme.types';
 
-export type ThemeType = 'light' | 'dark';
-
-interface Theme {
-  theme: ThemeType;
+export function isDark(theme?: ThemeType): boolean {
+  return theme ? theme === 'dark' : false;
 }
 
-export function isDark(props: Theme): boolean {
-  return props.theme === 'dark';
-}
-
-export function defineTheme(props: Theme): ThemeType {
-  return isDark(props) ? 'dark' : 'light';
+export function defineTheme(theme?: ThemeType): ThemeType {
+  return isDark(theme) ? 'dark' : 'light';
 }

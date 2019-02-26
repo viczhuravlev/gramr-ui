@@ -1,13 +1,13 @@
 import { ReactNode } from 'react';
 
-import { SizeType, ThemeType } from '../../utils/theme';
+import { ThemeSize, ThemeColors, ThemeType } from '../../styles/theme.types';
 
 export interface ButtonProps {
-  className?: string;
-  children?: ReactNode;
-
-  size?: SizeType;
+  size?: ThemeSize;
   theme?: ThemeType;
+  color?: ThemeColors;
   onClick?: () => void;
   isDisabled?: boolean;
+  className?: string;
+  children?: ReactNode;
 }

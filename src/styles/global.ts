@@ -1,3 +1,4 @@
+/* stylelint-disable property-no-vendor-prefix */
 import { css } from '@emotion/core';
 
 const globalStyles = css`
@@ -11,9 +12,9 @@ const globalStyles = css`
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
   }
 
   *,
@@ -48,7 +49,7 @@ const globalStyles = css`
   }
 
   pre {
-    font-family: monospace, monospace;
+    font-family: monospace;
     font-size: 1em;
   }
 
@@ -70,7 +71,7 @@ const globalStyles = css`
   code,
   kbd,
   samp {
-    font-family: monospace, monospace;
+    font-family: monospace;
     font-size: 1em;
   }
 

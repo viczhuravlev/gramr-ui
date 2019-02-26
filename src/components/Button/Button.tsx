@@ -16,7 +16,7 @@ const Button: FC<T.ButtonProps> = ({
 
   return (
     <S.Button
-      // size={size}
+      size={size}
       theme={theme}
       disabled={isDisabled}
       isDisabled={isDisabled}

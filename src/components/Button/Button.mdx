@@ -5,6 +5,8 @@ name: Button
 import { Playground, PropsTable } from 'docz';
 
 import Button from './Button';
+import { colors } from '../../styles/theme';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
 # Button
 
@@ -12,16 +14,44 @@ import Button from './Button';
 
 ## Default
 
-<Playground>
-  <Button>Click</Button>
+<Playground
+  style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}
+>
+  <Button>Default</Button>
   <Button isDisabled>isDisabled</Button>
+  {Object.keys(colors)
+    .filter(item => item !== '__docgenInfo' && item !== 'displayName')
+    .map(item => (
+      <Button color={item}>{capitalizeFirstLetter(item)}</Button>
+    ))}
 </Playground>
 
 ## Dark
 
-<Playground>
-  <Button theme="dark">Click</Button>
+<Playground
+  style={{
+    display: 'flex',
+    justifyContent: 'space-between',
+    flexWrap: 'wrap',
+    backgroundColor: '#1D2430'
+  }}
+>
+  <Button theme="dark">Default</Button>
   <Button theme="dark" isDisabled>
     isDisabled
   </Button>
+  {console.log(colors) ||
+    Object.keys(colors)
+      .filter(item => item !== '__docgenInfo' && item !== 'displayName')
+      .map(item => <Button color={item}>{capitalizeFirstLetter(item)}</Button>)}
+</Playground>
+
+## Size
+
+<Playground
+  style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}
+>
+  <Button size="s">Small</Button>
+  <Button size="m">Medium</Button>
+  <Button size="l">Large</Button>
 </Playground>

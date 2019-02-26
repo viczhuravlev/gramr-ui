@@ -1,23 +1,8 @@
-export const colors = {
-  white: '#FFFFFF',
-  black: '#000000',
-  grayLight: '#EAEDF1',
-  gray: '#A8AAB6',
-
-  blue: '#1890ff',
-  green: '#5CAC54',
-  orange: '#F7981C',
-  red: '#D93732',
-
-  darkLight: '#333D4D',
-  dark: '#242C3B'
-};
-
 export function hexToRgb(hex: string, opacity: number = 1): string | null {
   const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
   const hexLocal = hex.replace(
     shorthandRegex,
-    (m, r, g, b) => r + r + g + g + b + b
+    (m: string, r: string, g: string, b: string) => r + r + g + g + b + b
   );
 
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hexLocal);
