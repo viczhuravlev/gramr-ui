@@ -22,11 +22,12 @@
   "author": "Victor Zhuravlev <vzhuravlev15@gmail.com>",
   "license": "GPL version 3",
   "scripts": {
-    "build": "npm run build:source && npm run build:docz",
-    "build:docz": "docz build",
-    "build:source": "npm run build:lib && npm run build:types",
-    "build:lib": "webpack --mode production",
-    "build:types": "tsc --emitDeclarationOnly",
+    "build": "npm run build:source && npm run build:docs",
+    "build:docs": "docz build",
+    "build:docs:deploy": "npm run build:docs && gh-pages -d .docz/dist",
+    "build:source": "npm run build:source:lib && npm run build:source:types",
+    "build:source:lib": "webpack --mode production",
+    "build:source:types": "tsc --emitDeclarationOnly",
     "lint": "npm run lint:code && npm run lint:types",
     "lint:code": "npm run lint:code:styles && npm run lint:code:source",
     "lint:code:styles": "stylelint './src/**/*.{ts,tsx}'",
@@ -75,6 +76,7 @@
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-react": "7.12.4",
     "eslint-plugin-typescript": "0.14.0",
+    "gh-pages": "2.0.1",
     "husky": "1.3.1",
     "jest": "24.1.0",
     "jest-svg-transformer": "1.0.0",
@@ -108,7 +110,8 @@
       ]
     },
     "ignore": [
-      "**/lib/**"
+      "**/lib/**",
+      "**/docs/**"
     ]
   },
   "husky": {

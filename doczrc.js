@@ -1,7 +1,12 @@
+const { NODE_ENV } = process.env;
+
+const isProduction = NODE_ENV === 'production';
+
 module.exports = {
   title: `Gramr`,
   description: 'description',
   src: './src',
+  base: isProduction ? '/gramr/' : '/',
   typescript: true,
   codeSandbox: true,
   port: 8888,
