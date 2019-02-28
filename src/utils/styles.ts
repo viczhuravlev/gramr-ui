@@ -1,4 +1,6 @@
 export function hexToRgb(hex: string, opacity: number = 1): string | null {
+  if (!hex) return null;
+
   const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
   const hexLocal = hex.replace(
     shorthandRegex,

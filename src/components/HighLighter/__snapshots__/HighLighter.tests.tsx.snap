@@ -6,15 +6,15 @@ Array [
   <style
     dangerouslySetInnerHTML={
       Object {
-        "__html": ".css-rp5c58{background-color:yellow;opacity:0.1;}",
+        "__html": ".css-ecly6w{background-color:rgba(247,152,28,0.2);}",
       }
     }
-    data-emotion-css="rp5c58"
+    data-emotion-css="ecly6w"
   />,
   <span
-    className="css-rp5c58"
-    color="yellow"
-    opacity={0.1}
+    className="css-ecly6w"
+    color="#F7981C"
+    opacity={0.2}
   >
     ui
   </span>,
@@ -22,15 +22,15 @@ Array [
   <style
     dangerouslySetInnerHTML={
       Object {
-        "__html": ".css-rp5c58{background-color:yellow;opacity:0.1;}",
+        "__html": ".css-ecly6w{background-color:rgba(247,152,28,0.2);}",
       }
     }
-    data-emotion-css="rp5c58"
+    data-emotion-css="ecly6w"
   />,
   <span
-    className="css-rp5c58"
-    color="yellow"
-    opacity={0.1}
+    className="css-ecly6w"
+    color="#F7981C"
+    opacity={0.2}
   >
     ui
   </span>,
@@ -38,15 +38,15 @@ Array [
   <style
     dangerouslySetInnerHTML={
       Object {
-        "__html": ".css-rp5c58{background-color:yellow;opacity:0.1;}",
+        "__html": ".css-ecly6w{background-color:rgba(247,152,28,0.2);}",
       }
     }
-    data-emotion-css="rp5c58"
+    data-emotion-css="ecly6w"
   />,
   <span
-    className="css-rp5c58"
-    color="yellow"
-    opacity={0.1}
+    className="css-ecly6w"
+    color="#F7981C"
+    opacity={0.2}
   >
     ui
   </span>,
@@ -54,15 +54,15 @@ Array [
   <style
     dangerouslySetInnerHTML={
       Object {
-        "__html": ".css-rp5c58{background-color:yellow;opacity:0.1;}",
+        "__html": ".css-ecly6w{background-color:rgba(247,152,28,0.2);}",
       }
     }
-    data-emotion-css="rp5c58"
+    data-emotion-css="ecly6w"
   />,
   <span
-    className="css-rp5c58"
-    color="yellow"
-    opacity={0.1}
+    className="css-ecly6w"
+    color="#F7981C"
+    opacity={0.2}
   >
     ui
   </span>,

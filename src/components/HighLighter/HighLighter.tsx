@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { colors } from '../../styles/theme';
+
 import * as S from './HighLighter.styles';
 import * as T from './HighLighter.types';
 
@@ -21,16 +23,22 @@ function HighLighter(props: T.HighLighterProps): JSX.Element {
     <>{text}</>
   ) : (
     <>
-      {resultSearch.map(item =>
-        item.toLowerCase() === searchLower ? <S.HighLighter {...rest}>{item}</S.HighLighter> : item
+      {resultSearch.map((item, idx) =>
+        item.toLowerCase() === searchLower ? (
+          <S.HighLighter key={idx} {...rest}>
+            {item}
+          </S.HighLighter>
+        ) : (
+          item
+        )
       )}
     </>
   );
 }
 
 HighLighter.defaultProps = {
-  color: 'yellow',
-  opacity: 0.1
+  color: colors.orange,
+  opacity: 0.2
 };
 
 export default HighLighter;

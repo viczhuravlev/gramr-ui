@@ -1,29 +1,26 @@
-export enum Colors {
-  white = '#FFFFFF',
-  black = '#000000',
-  grayLight = '#d9d9d9',
-  gray = '#A8AAB6',
+export const themeColors = {
+  white: '#FFFFFF',
+  black: '#000000',
 
-  blue = '#1890ff',
-  green = '#5CAC54',
-  orange = '#F7981C',
-  red = '#D93732',
+  gray: '#A8AAB6',
+  grayLight: '#d9d9d9',
 
-  darkLight = '#374050',
-  dark = '#242C3B'
-}
+  dark: '#242C3B',
+  darkLight: '#374050'
+};
 
 /**
  * Common colors for project
  */
 export const colors = {
-  primary: Colors.blue,
-  // secondary: Colors.green,
-
-  success: Colors.green,
-  warning: Colors.orange,
-  error: Colors.red
+  red: '#D93732',
+  blue: '#1890ff',
+  green: '#5CAC54',
+  orange: '#F7981C',
+  purple: '#C86DD7'
 };
+
+console.log(colors);
 
 /**
  * Light theme
@@ -31,17 +28,17 @@ export const colors = {
 const light = {
   ...colors,
 
-  font: Colors.darkLight,
-  fontSecondary: Colors.gray,
-  fontHover: Colors.blue,
-  fontDisabled: Colors.gray,
+  font: themeColors.darkLight,
+  fontHover: colors.blue,
+  fontDisabled: themeColors.gray,
+  fontSecondary: themeColors.gray,
 
-  border: Colors.grayLight,
-  borderDisabled: Colors.grayLight,
-  borderHover: Colors.blue,
+  border: themeColors.grayLight,
+  borderHover: colors.blue,
+  borderDisabled: themeColors.grayLight,
 
-  background: Colors.white,
-  backgroundDisabled: Colors.white
+  background: themeColors.white,
+  backgroundDisabled: themeColors.white
 };
 
 /**
@@ -50,17 +47,17 @@ const light = {
 const dark = {
   ...colors,
 
-  font: Colors.white,
-  fontSecondary: Colors.gray,
-  fontHover: Colors.blue,
-  fontDisabled: Colors.darkLight,
+  font: themeColors.white,
+  fontHover: colors.blue,
+  fontSecondary: themeColors.gray,
+  fontDisabled: themeColors.darkLight,
 
-  border: Colors.darkLight,
-  borderDisabled: Colors.darkLight,
-  borderHover: Colors.darkLight,
+  border: themeColors.darkLight,
+  borderHover: themeColors.darkLight,
+  borderDisabled: themeColors.darkLight,
 
-  background: Colors.dark,
-  backgroundDisabled: Colors.dark
+  background: themeColors.dark,
+  backgroundDisabled: themeColors.dark
 };
 
 export const theme = { light, dark };

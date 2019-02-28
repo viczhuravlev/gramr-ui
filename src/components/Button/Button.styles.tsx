@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { hexToRgb } from '../../utils/styles';
 import { defineTheme } from '../../utils/theme';
 import { ThemeLightKey } from '../../styles/theme.types';
-import { theme, colors, Colors } from '../../styles/theme';
+import { theme, themeColors } from '../../styles/theme';
 
 import * as T from './Button.types';
 
@@ -21,7 +21,7 @@ const sizeStyles = {
   }),
   l: css({
     height: '40px',
-    padding: '0 15px',
+    padding: '0 20px',
     fontSize: '16px'
   })
 };
@@ -38,9 +38,7 @@ function getStylesTheme(
     return theme[themeStrung][optionDisabled];
   }
 
-  return props.color
-    ? colorsString || colors[props.color]
-    : theme[themeStrung][option];
+  return props.color ? colorsString || props.color : theme[themeStrung][option];
 }
 
 export const Button = styled.button<T.ButtonProps>`
@@ -49,7 +47,7 @@ export const Button = styled.button<T.ButtonProps>`
   cursor: ${props => (props.isDisabled ? 'not-allowed' : 'pointer')};
 
   color: ${props =>
-    getStylesTheme(props, 'font', 'fontDisabled', Colors.white)};
+    getStylesTheme(props, 'font', 'fontDisabled', themeColors.white)};
 
   border: 1px solid
     ${props => getStylesTheme(props, 'border', 'borderDisabled')};
@@ -66,19 +64,17 @@ export const Button = styled.button<T.ButtonProps>`
         &:active {
           color: ${
             props.color
-              ? Colors.white
+              ? themeColors.white
               : theme[defineTheme(props.theme)].fontHover
           };
           
           border-color: ${
             props.color
-              ? colors[props.color]
+              ? props.color
               : theme[defineTheme(props.theme)].borderHover
           };
           
-          background-color: ${
-            props.color ? hexToRgb(colors[props.color], 0.85) : ''
-          };
+          background-color: ${props.color ? hexToRgb(props.color, 0.85) : ''};
          
           transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
         }

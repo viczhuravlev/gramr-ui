@@ -4,9 +4,9 @@ export interface HighLighter {
    */
   opacity?: number;
   /**
-   * Default: yellow
+   * Default: #F7981C
    */
-  color?: 'yellow' | 'green' | 'skyBlue';
+  color?: string;
 }
 
 export interface HighLighterProps extends HighLighter {

@@ -6,6 +6,7 @@ import { Playground, PropsTable } from 'docz';
 
 import Button from './Button';
 import { colors } from '../../styles/theme';
+import { getColors } from '../../utils/helpers';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 # Button
@@ -19,11 +20,9 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 >
   <Button>Default</Button>
   <Button isDisabled>isDisabled</Button>
-  {Object.keys(colors)
-    .filter(item => item !== '__docgenInfo' && item !== 'displayName')
-    .map(item => (
-      <Button color={item}>{capitalizeFirstLetter(item)}</Button>
-    ))}
+  {getColors().map(item => (
+    <Button color={colors[item]}>{capitalizeFirstLetter(item)}</Button>
+  ))}
 </Playground>
 
 ## Dark
@@ -40,10 +39,9 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
   <Button theme="dark" isDisabled>
     isDisabled
   </Button>
-  {console.log(colors) ||
-    Object.keys(colors)
-      .filter(item => item !== '__docgenInfo' && item !== 'displayName')
-      .map(item => <Button color={item}>{capitalizeFirstLetter(item)}</Button>)}
+  {getColors().map(item => (
+    <Button color={colors[item]}>{capitalizeFirstLetter(item)}</Button>
+  ))}
 </Playground>
 
 ## Size
