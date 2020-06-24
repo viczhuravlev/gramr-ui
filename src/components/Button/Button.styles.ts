@@ -43,17 +43,16 @@ function getStylesTheme(
 
 export const Button = styled.button<T.ButtonProps>`
   ${(props) => sizeStyles[props.size || 'm'] || sizeStyles.m};
-  border-radius: 4px;
-  cursor: ${(props) => (props.isDisabled ? 'not-allowed' : 'pointer')};
-
   color: ${(props) =>
     getStylesTheme(props, 'font', 'fontDisabled', themeColors.white)};
 
-  border: 1px solid
-    ${(props) => getStylesTheme(props, 'border', 'borderDisabled')};
+  cursor: ${(props) => (props.isDisabled ? 'not-allowed' : 'pointer')};
 
   background-color: ${(props) =>
     getStylesTheme(props, 'background', 'backgroundDisabled')};
+  border: 1px solid
+    ${(props) => getStylesTheme(props, 'border', 'borderDisabled')};
+  border-radius: 4px;
 
   ${(props) =>
     props.isDisabled

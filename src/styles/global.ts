@@ -6,9 +6,11 @@ const globalStyles = css`
 
   html,
   body {
+    box-sizing: border-box;
+
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 1.15;
@@ -20,11 +22,14 @@ const globalStyles = css`
   *,
   *:before,
   *:after {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    user-select: none;
     box-sizing: inherit;
+
+    padding: 0;
+    margin: 0;
+
+    user-select: none;
+
+    outline: none;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -33,19 +38,22 @@ const globalStyles = css`
   }
 
   h1 {
-    font-size: 2em;
     margin: 0.67em 0;
+
+    font-size: 2em;
   }
 
   hr {
     box-sizing: content-box;
-    overflow: visible;
     display: block;
+
     height: 1px;
+    padding: 0;
+    margin: 1em 0;
+    overflow: visible;
+
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
   }
 
   pre {
@@ -58,9 +66,10 @@ const globalStyles = css`
   }
 
   abbr[title] {
-    border-bottom: none;
     text-decoration: underline;
     text-decoration: underline dotted;
+
+    border-bottom: none;
   }
 
   b,
@@ -81,9 +90,10 @@ const globalStyles = css`
 
   sub,
   sup {
+    position: relative;
+
     font-size: 75%;
     line-height: 0;
-    position: relative;
     vertical-align: baseline;
   }
 
@@ -104,10 +114,11 @@ const globalStyles = css`
   optgroup,
   select,
   textarea {
+    margin: 0;
+
     font-family: inherit;
     font-size: 100%;
     line-height: 1.15;
-    margin: 0;
   }
 
   button,
@@ -131,8 +142,9 @@ const globalStyles = css`
   [type='button']::-moz-focus-inner,
   [type='reset']::-moz-focus-inner,
   [type='submit']::-moz-focus-inner {
-    border-style: none;
     padding: 0;
+
+    border-style: none;
   }
 
   button:-moz-focusring,
@@ -152,17 +164,20 @@ const globalStyles = css`
   }
 
   fieldset {
-    border: 0;
-    margin: 0;
     padding: 0;
+    margin: 0;
+
+    border: 0;
   }
 
   legend {
     box-sizing: border-box;
-    color: inherit;
     display: table;
+
     max-width: 100%;
     padding: 0;
+
+    color: inherit;
     white-space: normal;
   }
 
@@ -172,6 +187,7 @@ const globalStyles = css`
 
   textarea {
     overflow: auto;
+
     resize: vertical;
   }
 
@@ -194,6 +210,7 @@ const globalStyles = css`
   [type='checkbox'],
   [type='radio'] {
     box-sizing: border-box;
+
     padding: 0;
   }
 
@@ -204,6 +221,7 @@ const globalStyles = css`
 
   [type='search'] {
     -webkit-appearance: textfield;
+
     outline-offset: -2px;
   }
 
@@ -212,12 +230,14 @@ const globalStyles = css`
   }
 
   ::selection {
-    background: #b3d4fc;
     text-shadow: none;
+
+    background: #b3d4fc;
   }
 
   ::-webkit-file-upload-button {
     -webkit-appearance: button;
+
     font: inherit;
   }
 `;

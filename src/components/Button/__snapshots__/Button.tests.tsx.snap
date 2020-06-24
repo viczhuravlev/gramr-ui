@@ -15,7 +15,7 @@ exports[`[component] Button [Snapshot] Button 1`] = `
     theme="light"
   >
     <button
-      className="css-107tu9w"
+      className="css-1ruvgbg"
       color="orange"
       disabled={false}
       size="m"
