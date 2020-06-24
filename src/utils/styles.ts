@@ -1,10 +1,10 @@
-export function hexToRgb(hex: string, opacity: number = 1): string | null {
+export function hexToRgb(hex: string, opacity = 1): string | null {
   if (!hex) return null;
 
   const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
   const hexLocal = hex.replace(
     shorthandRegex,
-    (m: string, r: string, g: string, b: string) => r + r + g + g + b + b
+    (_m: string, r: string, g: string, b: string) => r + r + g + g + b + b
   );
 
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hexLocal);

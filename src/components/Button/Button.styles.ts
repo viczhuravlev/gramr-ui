@@ -12,18 +12,18 @@ const sizeStyles = {
   s: css({
     height: '24px',
     padding: '0 7px',
-    fontSize: '14px'
+    fontSize: '14px',
   }),
   m: css({
     height: '32px',
     padding: '0 15px',
-    fontSize: '14px'
+    fontSize: '14px',
   }),
   l: css({
     height: '40px',
     padding: '0 20px',
-    fontSize: '16px'
-  })
+    fontSize: '16px',
+  }),
 };
 
 function getStylesTheme(
@@ -42,20 +42,20 @@ function getStylesTheme(
 }
 
 export const Button = styled.button<T.ButtonProps>`
-  ${props => sizeStyles[props.size || 'm'] || sizeStyles.m};
+  ${(props) => sizeStyles[props.size || 'm'] || sizeStyles.m};
   border-radius: 4px;
-  cursor: ${props => (props.isDisabled ? 'not-allowed' : 'pointer')};
+  cursor: ${(props) => (props.isDisabled ? 'not-allowed' : 'pointer')};
 
-  color: ${props =>
+  color: ${(props) =>
     getStylesTheme(props, 'font', 'fontDisabled', themeColors.white)};
 
   border: 1px solid
-    ${props => getStylesTheme(props, 'border', 'borderDisabled')};
+    ${(props) => getStylesTheme(props, 'border', 'borderDisabled')};
 
-  background-color: ${props =>
+  background-color: ${(props) =>
     getStylesTheme(props, 'background', 'backgroundDisabled')};
 
-  ${props =>
+  ${(props) =>
     props.isDisabled
       ? ''
       : `

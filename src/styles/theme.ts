@@ -6,7 +6,7 @@ export const themeColors = {
   grayLight: '#d9d9d9',
 
   dark: '#242C3B',
-  darkLight: '#374050'
+  darkLight: '#374050',
 };
 
 /**
@@ -17,10 +17,8 @@ export const colors = {
   blue: '#1890ff',
   green: '#5CAC54',
   orange: '#F7981C',
-  purple: '#C86DD7'
+  purple: '#C86DD7',
 };
-
-console.log(colors);
 
 /**
  * Light theme
@@ -38,7 +36,7 @@ const light = {
   borderDisabled: themeColors.grayLight,
 
   background: themeColors.white,
-  backgroundDisabled: themeColors.white
+  backgroundDisabled: themeColors.white,
 };
 
 /**
@@ -57,7 +55,7 @@ const dark = {
   borderDisabled: themeColors.darkLight,
 
   background: themeColors.dark,
-  backgroundDisabled: themeColors.dark
+  backgroundDisabled: themeColors.dark,
 };
 
 export const theme = { light, dark };

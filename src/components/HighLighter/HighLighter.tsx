@@ -14,7 +14,9 @@ function searchText(children: string, search: string): string[] {
 function HighLighter(props: T.HighLighterProps): JSX.Element {
   const { search, text, ...rest } = props;
 
-  if (!text || !search || typeof text !== 'string') return <>{text}</>;
+  if (!text || !search || typeof text !== 'string') {
+    return <>{text}</>;
+  }
 
   const resultSearch = searchText(text, search);
   const searchLower = search.toLowerCase();
@@ -38,7 +40,7 @@ function HighLighter(props: T.HighLighterProps): JSX.Element {
 
 HighLighter.defaultProps = {
   color: colors.orange,
-  opacity: 0.2
+  opacity: 0.2,
 };
 
 export default HighLighter;

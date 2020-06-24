@@ -8,6 +8,6 @@ export const Clamper = styled.span<T.Clamper>`
   /* stylelint-disable */
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: ${props => props.clamp || '1'};
+  -webkit-line-clamp: ${(props) => props.clamp || '1'};
   /* stylelint-enable */
 `;
