@@ -3,10 +3,10 @@ const { NODE_ENV } = process.env;
 const isProduction = NODE_ENV === 'production';
 
 module.exports = {
-  title: `Gramr`,
+  title: `Gramr UI`,
   description: 'description',
   src: './src',
-  base: isProduction ? '/gramr/' : '/',
+  base: isProduction ? '/gramr-ui/' : '/',
   typescript: true,
   codeSandbox: true,
   port: 8888,
