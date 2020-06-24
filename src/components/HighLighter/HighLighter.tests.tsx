@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
 
 import HighLighter from './HighLighter';
 // import * as S from './HighLighter.styles';
@@ -13,7 +13,7 @@ const text =
 
 describe('[component] HighLighter', () => {
   it('[Snapshot] HighLighter', () => {
-    const component = renderer.create(<HighLighter text={text} search={search} />).toJSON();
+    const component = mount(<HighLighter text={text} search={search} />);
 
     expect(component).toMatchSnapshot();
   });

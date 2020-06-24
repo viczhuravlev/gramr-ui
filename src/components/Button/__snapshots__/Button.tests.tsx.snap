@@ -1,22 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[component] Button [Snapshot] Button 1`] = `
-Array [
-  <style
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": ".css-107tu9w{height:32px;padding:0 15px;font-size:14px;border-radius:4px;cursor:pointer;color:#FFFFFF;border:1px solid orange;background-color:orange;}.css-107tu9w:hover,.css-107tu9w:focus,.css-107tu9w:active{color:#FFFFFF;border-color:orange;background-color:null;-webkit-transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;}",
-      }
-    }
-    data-emotion-css="107tu9w"
-  />,
-  <button
-    className="css-107tu9w"
+<Button
+  color="orange"
+  isDisabled={false}
+  size="m"
+  theme="light"
+>
+  <Styled(button)
     color="orange"
     disabled={false}
+    isDisabled={false}
     size="m"
+    theme="light"
   >
-    Test
-  </button>,
-]
+    <button
+      className="css-107tu9w"
+      color="orange"
+      disabled={false}
+      size="m"
+    >
+      Test
+    </button>
+  </Styled(button)>
+</Button>
 `;
