@@ -1,4 +1,4 @@
-export const themeColors = {
+export const themeColors: { [key: string]: string } = {
   white: '#FFFFFF',
   black: '#000000',
 
@@ -12,9 +12,10 @@ export const themeColors = {
 /**
  * Common colors for project
  */
-export const colors = {
+export const colors: { [key: string]: string } = {
   red: '#D93732',
   blue: '#1890ff',
+  grey: '#808080',
   green: '#5CAC54',
   orange: '#F7981C',
   purple: '#C86DD7',

@@ -1,5 +1,0 @@
-diff a/config/docz/wrapper.tsx b/config/docz/wrapper.tsx	(rejected hunks)
-@@ -106 +105,0 @@ const styles = css`
--   
-@@ -112 +110,0 @@ const styles = css`
--   
