@@ -12,7 +12,7 @@ at vzhuravlev15@gmail.com
 #### Technology stack
 
 - [x] React
-- [x] Emotion
+- [x] Linaria
 - [x] TypeScript
 
 #### Build

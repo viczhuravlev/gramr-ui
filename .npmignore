@@ -1,4 +1,5 @@
 src
 .babelrc
 .gitignore
+.linaria-cache
 webpack.config.js

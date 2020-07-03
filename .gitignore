@@ -28,4 +28,5 @@ node_modules/
 # other
 .DS_Store
 package-lock.json
+.linaria-cache
 storybook-static/
