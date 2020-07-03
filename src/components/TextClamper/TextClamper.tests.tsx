@@ -1,11 +1,11 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import renderer from 'react-test-renderer';
 
 import TextClamper from './TextClamper';
 
 describe('[component] TextClamper', () => {
-  test('[Snapshot] TextClamper', () => {
-    const tree = mount(
+  test('snapShot testing', () => {
+    const component = renderer.create(
       <TextClamper clamp="3">
         splitOnChars (Array). Determines what characters to use to chunk an
         element into smaller pieces. Version 0.1 of Clamp.js would always remove
@@ -22,6 +22,6 @@ describe('[component] TextClamper', () => {
       </TextClamper>
     );
 
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });
