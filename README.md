@@ -1,51 +1,50 @@
-## License
+<h1 align="center">
+  Gramr UI 🗡️ 🔥
+</h1>
 
-This material is available for private, non-commercial use under the
-[GPL version 3](http://www.gnu.org/licenses/gpl-3.0-standalone.html). If you
-would like to use this material to conduct your own workshop, please contact me
-at vzhuravlev15@gmail.com
+<div align="center">
+React UI library.
+</div>
 
-## TODO
+## ✨ Features
 
-### Architecture and tools
+- 💪 Written in React hooks.
+- 🛡 Written in TypeScript with predictable static types.
+- 🎨 Powerful theme customization.
 
-#### Technology stack
+## Description
 
-- [x] React
-- [x] Linaria
-- [x] TypeScript
+This is a react ui library. Gramr UI isn't production ready. The one will allow developers to build websites fast and easy. I decided not to support IE, so I will create theming with CSS variables and Gramr UI is written in TypeScript.
 
-#### Build
+### The tech stack is:
 
-- [x] Webpack
-  - [x] Babel
-  - [x] Typescript by babel
-  - [x] SVG
+- [TypeScript](https://www.typescriptlang.org)
+- [React](https://reactjs.org)
+- [Linaria](https://linaria.now.sh/)
 
-#### Quality assurance
+### Browser Support:
 
-- [x] Jest
-- [x] react-test-renderer
-- [x] ESlint
-- [x] stylelint
-- [x] tsx
-- [x] type-coverage
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Safari |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| last 3 versions                                                                                                                                                                                      | last 3 versions                                                                                                                                                                                                  | last 3 versions                                                                                                                                                                                              | last 3 versions                                                                                                                                                                                              |
 
-#### DOCS
+## 🔨 Usage
 
-- [x] docz
-  - [x] default theme
-  - [ ] custom theme
-    - [ ] light
-    - [ ] dark
+```jsx
+import { Button } from 'gramr-ui';
 
-#### Tools
+function App() {
+  return <Button>Touch me :D</Button>;
+}
+```
 
-- [x] husky
-- [x] lint-staged
-- [x] prettier
+Gramr UI import style manually:
 
-### Components
+```jsx
+import 'gramr-ui/lib/gramr-ui.css'
+```
+
+## Components
 
 #### Form
 
@@ -75,3 +74,10 @@ at vzhuravlev15@gmail.com
 - [ ] Card?
 - [x] TextClamper?
 - [x] HighLighter?
+
+## License
+
+This material is available for private, non-commercial use under the
+[GPL version 3](http://www.gnu.org/licenses/gpl-3.0-standalone.html). If you
+would like to use this material to conduct your own workshop, please contact me
+at vzhuravlev15@gmail.com

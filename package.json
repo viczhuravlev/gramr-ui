@@ -23,11 +23,11 @@
   "scripts": {
     "dev": "start-storybook -p 8081 -c 'config/storybook'",
     "prettier": "prettier --write 'src/**/*.{ts,tsx,mdx}'",
-    "build": "npm run build:source && npm run build:docs",
+    "build": "NODE_ENV=production npm run build:source && npm run build:docs",
     "build:docs": "build-storybook -c 'config/storybook'",
     "build:docs:deploy": "npm run build:docs && gh-pages -d storybook-static",
     "build:source": "npm run build:source:lib && npm run build:source:types",
-    "build:source:lib": "webpack --mode production",
+    "build:source:lib": "webpack",
     "build:source:types": "tsc --emitDeclarationOnly",
     "lint": "npm run lint:code && npm run lint:types",
     "lint:code": "npm run lint:code:styles && npm run lint:code:source",

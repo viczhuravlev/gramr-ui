@@ -7,6 +7,7 @@ const config = require('./package.json');
 const isDevelopMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
+  mode: isDevelopMode ? 'development' : 'production',
   entry: path.resolve(__dirname, './src/index'),
   output: {
     path: path.resolve(__dirname, 'lib'),
