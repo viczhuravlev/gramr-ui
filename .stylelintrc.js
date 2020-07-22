@@ -5,7 +5,7 @@ const propertiesOrder = stylelintConfigRecessOrder.rules[
 ].map((rule) => ({ ...rule, emptyLineBefore: 'always' }));
 
 module.exports = {
-  extends: ['stylelint-config-standard'],
+  extends: ['stylelint-config-standard', 'linaria/stylelint-config'],
   plugins: ['stylelint-order'],
   rules: {
     'selector-pseudo-element-colon-notation': null,
