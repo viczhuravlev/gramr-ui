@@ -1,68 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[component] HighLighter [Snapshot] HighLighter 1`] = `
-<HighLighter
-  color="#F7981C"
-  opacity={0.2}
-  search="ui"
-  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, q
-  <Styled(span)
+Array [
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, q",
+  <span
+    className="h1v76a4b"
     color="#F7981C"
-    key="1"
     opacity={0.2}
+    style={
+      Object {
+        "--h1v76a4b-0": "rgba(247, 152, 28, 0.2)",
+      }
+    }
   >
-    <span
-      className="css-ecly6w"
-      color="#F7981C"
-      opacity={0.2}
-    >
-      ui
-    </span>
-  </Styled(span)>
-  s nostrud exercitation ullamco laboris nisi ut aliq
-  <Styled(span)
+    ui
+  </span>,
+  "s nostrud exercitation ullamco laboris nisi ut aliq",
+  <span
+    className="h1v76a4b"
     color="#F7981C"
-    key="3"
     opacity={0.2}
+    style={
+      Object {
+        "--h1v76a4b-0": "rgba(247, 152, 28, 0.2)",
+      }
+    }
   >
-    <span
-      className="css-ecly6w"
-      color="#F7981C"
-      opacity={0.2}
-    >
-      ui
-    </span>
-  </Styled(span)>
-  p ex ea commodo consequat. D
-  <Styled(span)
+    ui
+  </span>,
+  "p ex ea commodo consequat. D",
+  <span
+    className="h1v76a4b"
     color="#F7981C"
-    key="5"
     opacity={0.2}
+    style={
+      Object {
+        "--h1v76a4b-0": "rgba(247, 152, 28, 0.2)",
+      }
+    }
   >
-    <span
-      className="css-ecly6w"
-      color="#F7981C"
-      opacity={0.2}
-    >
-      ui
-    </span>
-  </Styled(span)>
-  s aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa q
-  <Styled(span)
+    ui
+  </span>,
+  "s aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa q",
+  <span
+    className="h1v76a4b"
     color="#F7981C"
-    key="7"
     opacity={0.2}
+    style={
+      Object {
+        "--h1v76a4b-0": "rgba(247, 152, 28, 0.2)",
+      }
+    }
   >
-    <span
-      className="css-ecly6w"
-      color="#F7981C"
-      opacity={0.2}
-    >
-      ui
-    </span>
-  </Styled(span)>
-   officia deserunt mollit anim id est laborum.
-</HighLighter>
+    ui
+  </span>,
+  " officia deserunt mollit anim id est laborum.",
+]
 `;

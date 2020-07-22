@@ -4,6 +4,7 @@
   "env": {
     "browser": true,
     "jest": true,
+    "node": true,
     "es6": true
   },
   "parserOptions": {
@@ -11,13 +12,24 @@
     "ecmaVersion": 6,
     "ecmaFeatures": {
       "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
     }
   },
   "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
     "airbnb-typescript",
     "airbnb/hooks",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
   "rules": {
