@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-This is a react UI library. <i>Gramr UI isn't production ready.</i> The one will allow developers to build websites fast and easy.
+This is a React UI library. <i>Gramr UI isn't production ready.</i> The one will allow developers to build websites fast and easy.
 </div>
 
 ## ✨ Features
@@ -15,7 +15,9 @@ This is a react UI library. <i>Gramr UI isn't production ready.</i> The one will
 
 ## Description
 
-I decided not to support IE, so I will create theming with CSS variables and
+The idea of a project in creating a library without dependencies and with maximum functionality.
+I decided not to support IE, so I will create theming with CSS variables and it will allow for powerful customization of your theme. 
+I aim for full coverage with types and against the use of any. 
 
 ### The tech stack is:
 
