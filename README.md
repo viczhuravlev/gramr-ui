@@ -3,18 +3,19 @@
 </h1>
 
 <div align="center">
-React UI library.
+This is a react UI library. <i>Gramr UI isn't production ready.</i> The one will allow developers to build websites fast and easy.
 </div>
 
 ## ✨ Features
 
 - 💪 Written in React hooks.
-- 🛡 Written in TypeScript with predictable static types.
+- 🛡 Written in TypeScript.
 - 🎨 Powerful theme customization.
+- 🤟 Zero-dependency
 
 ## Description
 
-This is a react ui library. Gramr UI isn't production ready. The one will allow developers to build websites fast and easy. I decided not to support IE, so I will create theming with CSS variables and Gramr UI is written in TypeScript.
+I decided not to support IE, so I will create theming with CSS variables and
 
 ### The tech stack is:
 
@@ -41,39 +42,59 @@ function App() {
 Gramr UI import style manually:
 
 ```jsx
-import 'gramr-ui/lib/gramr-ui.css'
+import 'gramr-ui/lib/gramr-ui.css';
 ```
 
 ## Components
 
-#### Form
+### General
 
-- [ ] Input
-- [ ] Text area
 - [ ] Button
-- [ ] Checkbox
-- [ ] Checkbox - toggle
-- [ ] Radio
-- [ ] Radio - tab
-- [ ] Label
-- [ ] Select
-
-#### Other
-
-- [ ] Labels
-- [ ] Tabs
-- [ ] Popup
-- [ ] Tooltip
-- [ ] Notification
-- [ ] Icons
+- [ ] Icon
+- [ ] Title
+- [ ] Text
+- [ ] Link
 - [ ] Table
-- [ ] Typography
-- [ ] Slider?
-- [ ] Pagination?
-- [ ] Step?
-- [ ] Card?
-- [x] TextClamper?
-- [x] HighLighter?
+- [ ] List
+
+### Layout
+
+- [ ] Grid
+- [ ] Layout
+- [ ] Menu
+
+### Navigation
+
+- [ ] Tabs
+- [ ] Step
+- [ ] Menu
+- [ ] Breadcrumb
+- [ ] Pagination
+
+### Form
+
+- [ ] Label
+- [ ] Input
+- [ ] Radio
+- [ ] Select
+- [ ] Slider
+- [ ] Textarea
+- [ ] Checkbox
+
+### Other
+
+- [ ] Popup
+- [ ] Labels
+- [ ] Social
+- [ ] Social
+- [ ] Upload
+- [ ] Sidebar
+- [ ] Tooltip
+- [ ] Dropdown
+- [ ] Progress bar
+- [ ] Notification
+- [x] TextClamper
+- [x] HighLighter
 
 ## License
 
