@@ -17,8 +17,8 @@ This is a React UI library. <i>Gramr UI cannot be used for production.</i> The l
 
 
 The idea of the project was to create a livery with no dependence and with maximum functionality.
-I decided not to support IE, so I created theming using CSS variables and it allows powerful customization of your theme. 
-I aim for full coverage with types and against the use of "any". 
+I decided not to support IE, so I created theming using CSS variables and it allows powerful customization of your theme.
+I aim for full coverage with types and against the use of "any".
 
 ### The tech stack is:
 
@@ -102,7 +102,7 @@ import 'gramr-ui/lib/gramr-ui.css';
 - [ ] Dropdown
 - [ ] Progress bar
 - [ ] Notification
-- [x] TextClamper
+- [x] TextCutter
 - [x] HighLighter
 
 ## License

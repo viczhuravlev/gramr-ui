@@ -1,7 +1,7 @@
 /// <reference types="react" />
-import * as T from './TextClamper.types';
-export declare const Clamper: import('react').StatelessComponent<
-  T.Clamper &
+import * as T from './TextCutter.types';
+export declare const Container: import('react').StatelessComponent<
+  T.TextCutterDefaultProps &
     import('react').ClassAttributes<HTMLSpanElement> &
     import('react').HTMLAttributes<HTMLSpanElement> & {
       as?:

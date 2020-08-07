@@ -1,16 +1,13 @@
 import { styled } from 'linaria/react';
 
-import * as T from './TextClamper.types';
+import * as T from './TextCutter.types';
 
-export const Clamper = styled.span<T.Clamper>`
+export const Container = styled.span<T.TextCutterDefaultProps>`
+  display: -webkit-box;
+
   overflow: hidden;
 
   white-space: normal;
-
-  /* stylelint-disable */
-  display: -webkit-box;
-
   -webkit-box-orient: vertical;
   -webkit-line-clamp: ${(props) => props.clamp || '1'};
-  /* stylelint-enable */
 `;

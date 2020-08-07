@@ -10,20 +10,21 @@
     "strict": true,
 
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "noImplicitReturns": true,
+    "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
     "moduleResolution": "node",
     "baseUrl": ".",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "typeRoots": ["node_modules/@types", "./src/types"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
 
+    "pretty": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]
