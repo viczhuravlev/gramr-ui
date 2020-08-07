@@ -1,0 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+*,*:before,*:after{box-sizing:inherit;padding:0;margin:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none;-webkit-overflow-scrolling:touch;}html,body{box-sizing:border-box;width:100%;height:100%;font-family:'Roboto',sans-serif;font-weight:400;line-height:1;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}h1,h2,h3,h4,h5,h6{font-family:'Roboto',sans-serif;}div{box-sizing:border-box;}div:before,div:after{box-sizing:border-box;}input,button{box-sizing:border-box;}span{word-wrap:break-word;}
+
+.h1v76a4b{background-color:var(--h1v76a4b-0);}
+
+.cb52807{overflow:hidden;white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:var(--cb52807-0);}
+

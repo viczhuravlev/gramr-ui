@@ -1,8 +1,3 @@
-export declare type SizeType = 's' | 'm' | 'l';
-export declare type ThemeType = 'light' | 'dark';
-interface Theme {
-    theme: ThemeType;
-}
-export declare function isDark(props: Theme): boolean;
-export declare function defineTheme(props: Theme): ThemeType;
-export {};
+import { ThemeType } from '../styles/theme.types';
+export declare function isDark(theme?: ThemeType): boolean;
+export declare function defineTheme(theme?: ThemeType): ThemeType;

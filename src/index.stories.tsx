@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { getColors } from './utils/helpers';
+
 import { colors, themeColors } from './styles/theme';
 
 storiesOf('Getting Started', module).add('Colors', () => (

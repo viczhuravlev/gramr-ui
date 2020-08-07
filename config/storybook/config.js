@@ -2,18 +2,14 @@ import React from 'react';
 import { withPropsTable } from 'storybook-addon-react-docgen';
 import { configure, addDecorator } from '@storybook/react';
 
-import GlobalStyles from './GlobalStyles';
 import { TableComponent } from './TableComponent';
 
 const styleContainer = { padding: '10px' };
 
 function WithGlobalStyles(story) {
   return (
-    <div id="app">
-      <div style={styleContainer}>
-        <GlobalStyles />
-        {story()}
-      </div>
+    <div id="app" style={styleContainer}>
+      {story()}
     </div>
   );
 }

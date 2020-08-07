@@ -1,50 +1,30 @@
-export declare const light: {
-    text: string;
-    textDisabled: string;
-    border: string;
-    background: string;
-    primary: string;
-    secondary: string;
-    prominent: string;
-    success: string;
-    warning: string;
-    error: string;
+export declare const themeColors: {
+  [key: string]: string;
 };
-export declare const dark: {
-    text: string;
-    textDisabled: string;
-    background: string;
-    border: string;
-    primary: string;
-    secondary: string;
-    prominent: string;
-    success: string;
-    warning: string;
-    error: string;
+export declare const colors: {
+  [key: string]: string;
 };
 export declare const theme: {
-    light: {
-        text: string;
-        textDisabled: string;
-        border: string;
-        background: string;
-        primary: string;
-        secondary: string;
-        prominent: string;
-        success: string;
-        warning: string;
-        error: string;
-    };
-    dark: {
-        text: string;
-        textDisabled: string;
-        background: string;
-        border: string;
-        primary: string;
-        secondary: string;
-        prominent: string;
-        success: string;
-        warning: string;
-        error: string;
-    };
+  light: {
+    font: string;
+    fontHover: string;
+    fontDisabled: string;
+    fontSecondary: string;
+    border: string;
+    borderHover: string;
+    borderDisabled: string;
+    background: string;
+    backgroundDisabled: string;
+  };
+  dark: {
+    font: string;
+    fontHover: string;
+    fontSecondary: string;
+    fontDisabled: string;
+    border: string;
+    borderHover: string;
+    borderDisabled: string;
+    background: string;
+    backgroundDisabled: string;
+  };
 };

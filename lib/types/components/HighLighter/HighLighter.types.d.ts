@@ -1,8 +1,8 @@
 export interface HighLighter {
-    opacity?: number;
-    color?: 'yellow' | 'green' | 'skyBlue';
+  opacity?: number;
+  color?: string;
 }
 export interface HighLighterProps extends HighLighter {
-    text?: string;
-    search?: string;
+  text?: string;
+  search?: string;
 }
