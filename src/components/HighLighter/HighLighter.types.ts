@@ -1,15 +1,13 @@
-export interface HighLighter {
-  /**
-   * Default:  0.1
-   */
-  opacity?: number;
-  /**
-   * Default: #F7981C
-   */
-  color?: string;
+import { CSSProperties } from 'react';
+
+export interface HighLighterDefaultProps {
+  color: string;
+  opacity: number;
 }
 
-export interface HighLighterProps extends HighLighter {
-  text?: string;
-  search?: string;
+export interface HighLighterProps extends Partial<HighLighterDefaultProps> {
+  style?: CSSProperties;
+  search?: string | null;
+  children: string;
+  className?: string;
 }

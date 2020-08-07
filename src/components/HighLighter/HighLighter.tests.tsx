@@ -14,7 +14,7 @@ const text =
 describe('[component] HighLighter', () => {
   it('[Snapshot] HighLighter', () => {
     const component = renderer.create(
-      <HighLighter text={text} search={search} />
+      <HighLighter search={search}>{text}</HighLighter>
     );
 
     expect(component.toJSON()).toMatchSnapshot();

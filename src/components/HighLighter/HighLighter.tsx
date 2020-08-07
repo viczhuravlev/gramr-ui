@@ -2,45 +2,56 @@ import React from 'react';
 
 import { colors } from '../../styles/theme';
 
-import * as S from './HighLighter.styles';
 import * as T from './HighLighter.types';
+import * as U from './HighLighter.utils';
+import * as S from './HighLighter.styles';
 
-function searchText(children: string, search: string): string[] {
-  const pattern = new RegExp(`(${search})`, 'i');
+function HighLighter(props: T.HighLighterProps): JSX.Element | null {
+  const { style, color, search, opacity, children, className } = props;
 
-  return children.split(pattern);
-}
-
-function HighLighter(props: T.HighLighterProps): JSX.Element {
-  const { search, text, ...rest } = props;
-
-  if (!text || !search || typeof text !== 'string') {
-    return <>{text}</>;
+  if (!children) {
+    return null;
   }
 
-  const resultSearch = searchText(text, search);
+  if (!search) {
+    return <>{children}</>;
+  }
+
+  const resultSearch = U.searchText(children, search);
   const searchLower = search.toLowerCase();
 
-  return resultSearch && resultSearch.length < 2 ? (
-    <>{text}</>
-  ) : (
+  if (resultSearch?.length < 2) {
+    return <>{children}</>;
+  }
+
+  return (
     <>
-      {resultSearch.map((item, idx) =>
-        item.toLowerCase() === searchLower ? (
-          <S.HighLighter key={idx} {...rest}>
-            {item}
+      {resultSearch.map((word, index) => {
+        if (word.toLowerCase() !== searchLower) {
+          return word;
+        }
+
+        return (
+          <S.HighLighter
+            key={index}
+            color={color}
+            style={style}
+            opacity={opacity}
+            className={className}
+          >
+            {word}
           </S.HighLighter>
-        ) : (
-          item
-        )
-      )}
+        );
+      })}
     </>
   );
 }
 
-HighLighter.defaultProps = {
+const defaultProps: T.HighLighterDefaultProps = {
   color: colors.orange,
   opacity: 0.2,
 };
+
+HighLighter.defaultProps = defaultProps;
 
 export default HighLighter;
