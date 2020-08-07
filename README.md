@@ -3,21 +3,22 @@
 </h1>
 
 <div align="center">
-This is a React UI library. <i>Gramr UI isn't production ready.</i> The one will allow developers to build websites fast and easy.
+This is a React UI library. <i>Gramr UI cannot be used for production.</i> The library allows developers to build website fast and easier.
 </div>
 
-## ✨ Features
+## ✨ Advantages
 
-- 💪 Written in React hooks.
-- 🛡 Written in TypeScript.
+- 💪 Written with React hooks.
+- 🛡 Written with TypeScript.
 - 🎨 Powerful theme customization.
 - 🤟 Zero-dependency
 
 ## Description
 
-The idea of a project in creating a library without dependencies and with maximum functionality.
-I decided not to support IE, so I will create theming with CSS variables and it will allow for powerful customization of your theme. 
-I aim for full coverage with types and against the use of any. 
+
+The idea of the project was to create a livery with no dependence and with maximum functionality.
+I decided not to support IE, so I created theming using CSS variables and it allows powerful customization of your theme. 
+I aim for full coverage with types and against the use of "any". 
 
 ### The tech stack is:
 
@@ -48,6 +49,12 @@ import 'gramr-ui/lib/gramr-ui.css';
 ```
 
 ## Components
+
+## Core
+
+- [x] types
+- [ ] hooks
+- [ ] theme light/dark
 
 ### General
 
