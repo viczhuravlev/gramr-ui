@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { colors } from '../../styles/theme';
-
 import * as T from './HighLighter.types';
 import * as U from './HighLighter.utils';
 import * as S from './HighLighter.styles';
@@ -48,7 +46,7 @@ function HighLighter(props: T.HighLighterProps): JSX.Element | null {
 }
 
 const defaultProps: T.HighLighterDefaultProps = {
-  color: colors.orange,
+  color: '#F7981C',
   opacity: 0.2,
 };
 

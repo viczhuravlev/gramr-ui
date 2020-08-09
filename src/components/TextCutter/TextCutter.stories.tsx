@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { TextCutter } from './index';
 
-storiesOf('TextCutter', module)
+storiesOf('Typography/TextCutter', module)
   .add('Default', () => (
     <TextCutter>
       But I must explain to you how all this mistaken idea of denouncing
