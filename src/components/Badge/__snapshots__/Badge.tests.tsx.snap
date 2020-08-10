@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[component] Badge [Snapshot] Badge 1`] = `
+<span
+  className="s1qvlahm b1t43xoe t1hb7lyd"
+  data-size="m"
+  style={
+    Object {
+      "--t1hb7lyd-0": "400",
+      "--t1hb7lyd-1": "",
+      "--t1hb7lyd-2": "inherit",
+    }
+  }
+>
+  Steve fish muskellunge swallower triplefin blenny horsefish wolffish.
+</span>
+`;
