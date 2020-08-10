@@ -3,6 +3,7 @@ import React from 'react';
 import * as T from './HighLighter.types';
 import * as U from './HighLighter.utils';
 import * as S from './HighLighter.styles';
+import { defaultLight } from '../../styles/theme';
 
 function HighLighter(props: T.HighLighterProps): JSX.Element | null {
   const { style, color, search, opacity, children, className } = props;
@@ -32,9 +33,9 @@ function HighLighter(props: T.HighLighterProps): JSX.Element | null {
         return (
           <S.HighLighter
             key={index}
-            color={color}
+            color={color || defaultLight['--gramr-ui-prominent-color']}
             style={style}
-            opacity={opacity}
+            opacity={opacity || 0.4}
             className={className}
           >
             {word}
@@ -46,8 +47,8 @@ function HighLighter(props: T.HighLighterProps): JSX.Element | null {
 }
 
 const defaultProps: T.HighLighterDefaultProps = {
-  color: '#F7981C',
-  opacity: 0.2,
+  color: defaultLight['--gramr-ui-prominent-color'],
+  opacity: 0.4,
 };
 
 HighLighter.defaultProps = defaultProps;

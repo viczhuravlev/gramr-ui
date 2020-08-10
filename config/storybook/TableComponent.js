@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { colors } from '../../src/styles/theme';
-
-const spanStyles = { color: colors.red };
+const spanStyles = { color: 'red' };
 
 const tableStyles = {
   marginTop: '10px',
@@ -10,7 +8,7 @@ const tableStyles = {
 };
 
 const cellStyles = {
-  border: `1px solid ${colors.grey}`,
+  border: `1px solid gray`,
   padding: '5px 10px',
   textAlign: 'left',
 };

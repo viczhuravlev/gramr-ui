@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react';
 
 import { HighLighter } from './index';
 
-storiesOf('HighLighter', module)
+storiesOf('Typography/HighLighter', module)
   .add('Default', () => (
-    <HighLighter search="ui">
+    <HighLighter search="consectetur adipiscing elit">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -27,7 +27,7 @@ storiesOf('HighLighter', module)
     </HighLighter>
   ))
   .add('Not found', () => (
-    <HighLighter search="ui" color="#1890ff" opacity={1}>
+    <HighLighter search="asdasd">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

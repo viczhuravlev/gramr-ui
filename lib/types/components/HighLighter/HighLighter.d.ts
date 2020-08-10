@@ -1,10 +1,7 @@
 /// <reference types="react" />
 import * as T from './HighLighter.types';
-declare function HighLighter(props: T.HighLighterProps): JSX.Element;
+declare function HighLighter(props: T.HighLighterProps): JSX.Element | null;
 declare namespace HighLighter {
-  var defaultProps: {
-    color: string;
-    opacity: number;
-  };
+    var defaultProps: T.HighLighterDefaultProps;
 }
 export default HighLighter;

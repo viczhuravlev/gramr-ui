@@ -1,11 +1,9 @@
-import { colors } from '../styles/theme';
-
-export function capitalizeFirstLetter(string: string): string {
-  return string.charAt(0).toUpperCase() + string.slice(1);
+export function mergeClassNames(
+  ...args: (string | null | undefined)[]
+): string {
+  return args.filter((classname) => typeof classname === 'string').join(' ');
 }
 
-export function getColors() {
-  return Object.keys(colors).filter(
-    item => item !== '__docgenInfo' && item !== 'displayName'
-  );
-}
+// export function capitalizeFirstLetter(string: string): string {
+//   return string.charAt(0).toUpperCase() + string.slice(1);
+// }

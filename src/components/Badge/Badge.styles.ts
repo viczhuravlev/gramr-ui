@@ -15,7 +15,7 @@ export const Badge = styled(Text)`
 
   color: #fff;
 
-  background-color: var(--gramr-prominent-color);
+  background-color: var(--gramr-ui-prominent-color);
   border-radius: 14px;
 
   &[data-size='xs'] {

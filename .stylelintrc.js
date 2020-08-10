@@ -10,6 +10,7 @@ module.exports = {
   rules: {
     'selector-pseudo-element-colon-notation': null,
     'declaration-block-trailing-semicolon': null,
+    'custom-property-empty-line-before': null,
     'no-missing-end-of-source-newline': null,
     'declaration-colon-newline-after': null,
     'value-list-comma-newline-after': null,

@@ -18,10 +18,10 @@ const NewBadge = styled(Badge)`
 `;
 
 const newStyle = css`
-  color: var(--gramr-font-color);
+  color: var(--gramr-ui-font-color);
 
   background-color: transparent;
-  box-shadow: 0 0 0 1px var(--gramr-font-color) inset;
+  box-shadow: 0 0 0 1px var(--gramr-ui-font-color) inset;
 `;
 
 storiesOf('Badge', module)

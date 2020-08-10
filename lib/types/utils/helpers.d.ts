@@ -1,2 +1,1 @@
-export declare function capitalizeFirstLetter(string: string): string;
-export declare function getColors(): string[];
+export declare function mergeClassNames(...args: (string | null | undefined)[]): string;

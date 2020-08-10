@@ -17,3 +17,19 @@ export function hexToRgb(hex: string, opacity = 1): string | null {
 
   return `rgba(${r}, ${g}, ${b}, ${opacity})`;
 }
+
+// function getAlphaForHex(opacity = 1): string {
+//   const alpha = Math.round(opacity * 255); // 255,252,250,247...
+//
+//   return (alpha + 0x10000).toString(16).substr(-2).toUpperCase(); // FF, FC, FA...
+// }
+//
+// export function hexToHexa(hex: string, opacity = 1): string | null {
+//   if (!hex) return null;
+//
+//   if (opacity === 1) {
+//     return hex;
+//   }
+//
+//   return `${hex}${getAlphaForHex(opacity)}`;
+// }
