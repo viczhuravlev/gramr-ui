@@ -6,10 +6,10 @@ Array [
   <span
     className="h1v76a4b"
     color="#F7981C"
-    opacity={0.2}
+    opacity={0.4}
     style={
       Object {
-        "--h1v76a4b-0": "rgba(247, 152, 28, 0.2)",
+        "--h1v76a4b-0": "rgba(247, 152, 28, 0.4)",
       }
     }
   >
@@ -19,10 +19,10 @@ Array [
   <span
     className="h1v76a4b"
     color="#F7981C"
-    opacity={0.2}
+    opacity={0.4}
     style={
       Object {
-        "--h1v76a4b-0": "rgba(247, 152, 28, 0.2)",
+        "--h1v76a4b-0": "rgba(247, 152, 28, 0.4)",
       }
     }
   >
@@ -32,10 +32,10 @@ Array [
   <span
     className="h1v76a4b"
     color="#F7981C"
-    opacity={0.2}
+    opacity={0.4}
     style={
       Object {
-        "--h1v76a4b-0": "rgba(247, 152, 28, 0.2)",
+        "--h1v76a4b-0": "rgba(247, 152, 28, 0.4)",
       }
     }
   >
@@ -45,10 +45,10 @@ Array [
   <span
     className="h1v76a4b"
     color="#F7981C"
-    opacity={0.2}
+    opacity={0.4}
     style={
       Object {
-        "--h1v76a4b-0": "rgba(247, 152, 28, 0.2)",
+        "--h1v76a4b-0": "rgba(247, 152, 28, 0.4)",
       }
     }
   >

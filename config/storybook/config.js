@@ -41,8 +41,8 @@ addDecorator(WithGlobalStyles);
 // require welcome screen
 require('../../src/index.stories');
 
-// automatically import all files ending in *.stories.js
-const req = require.context('../../src/components', true, /\.stories\.tsx$/);
+// automatically import all files ending in *.stories.jss
+const req = require.context('../../src', true, /\.stories\.tsx$/);
 
 function loadStories() {
   req.keys().forEach((filename) => req(filename));

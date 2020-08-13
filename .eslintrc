@@ -8,7 +8,7 @@
     "es6": true
   },
   "parserOptions": {
-    "project": "./tsconfig.json",
+    "project": "./tsconfig.lint.json",
     "ecmaVersion": 6,
     "ecmaFeatures": {
       "jsx": true
@@ -34,6 +34,7 @@
   ],
   "rules": {
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "react/jsx-one-expression-per-line": "warn",
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
     "@typescript-eslint/indent": "off",
