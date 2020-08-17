@@ -1,3 +1,10 @@
+![GitHub gramr-ui file size in bytes](https://img.shields.io/github/size/viczhuravlev/gramr-ui/lib/gramr-ui.js?label=gramr-ui)
+![GitHub file size in bytes](https://img.shields.io/github/size/viczhuravlev/gramr-ui/lib/gramr-ui.css?label=gramr-ui%20style)
+<br />
+![GitHub package.json version](https://img.shields.io/github/package-json/v/viczhuravlev/gramr-ui?style=plastic)
+![GitHub language count](https://img.shields.io/github/languages/count/viczhuravlev/gramr-ui)
+![GitHub top language](https://img.shields.io/github/languages/top/viczhuravlev/gramr-ui)
+
 <h1 align="center">
   Gramr UI 🗡️ 🔥
 </h1>
@@ -53,15 +60,15 @@ import 'gramr-ui/lib/gramr-ui.css';
 ## Core
 
 - [x] types
-- [ ] hooks
-- [ ] theme light/dark
+- [x] hooks
+- [x] theme light/dark
 
 ### General
 
 - [ ] Button
 - [ ] Icon
 - [ ] Title
-- [ ] Text
+- [x] Text
 - [ ] Link
 - [ ] Table
 - [ ] List
@@ -92,6 +99,7 @@ import 'gramr-ui/lib/gramr-ui.css';
 
 ### Other
 
+- [x] Badge
 - [ ] Popup
 - [ ] Labels
 - [ ] Social
